@@ -14,22 +14,6 @@ def line(deli)
   end
 end
 
-deli = []
-
-def line(deli)
-  line_array = []
-  if deli == []
-    puts "The line is currently empty."
-  else
-    deli.each do |patron|
-      patron_num = deli.index(patron) + 1
-      line_array << "#{patron_num}."
-      line_array << patron
-    end
-    puts "The line is currently: #{line_array.join(" ")}"
-  end
-end
-
 def take_a_number(deli, name)
   deli << name
   puts "Welcome, #{name}. You are number #{deli.length} in line."
